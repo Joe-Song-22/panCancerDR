@@ -37,6 +37,22 @@ Before running the code, ensure you have the following libraries installed:
   
 - **Hardware Requirements**:
   - **GPU**: NVIDIA 4090 or equivalent is required for training large-scale models.
+Here’s the translated README with the requested information:
+
+
+## **Training Methodology**
+
+1. **Data Import**  
+   - Each dataset is named according to the corresponding drug.
+   - The model automatically imports the dataset based on the file name.
+
+2. **Model Training**  
+   - The model processes the dataset, trains on it, and evaluates its performance.
+   - AUC values are calculated as the primary performance metric.
+
+3. **Additional Features**  
+   - **Generate ROC Curves**: After training, you can visualize the model's performance using ROC curves.
+   - **Feature Vector Extraction**: The model can return feature vectors from the embedding space for further analysis.
 
 
 This README provides all necessary information to understand, set up, and run your project. Let me know if you'd like any additional sections or modifications!
