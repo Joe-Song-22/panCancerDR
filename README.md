@@ -55,14 +55,13 @@ git clone https://github.com/Joe-Song-22/panCancerDR.git
 
 ### Directory Structure
 - **data/**: Contains the datasets for different drugs, each compressed into a separate `.zip` file named after the corresponding drug.  
-- **source/**: Includes the source code for the model. Each drug has a dedicated Python script for training, testing, and evaluation, named after the drug (e.g., `drugA_train.py`, `drugB_test.py`).  
+- **source/**: Includes the source code for the model. Each drug has a dedicated Python script for training, testing, and evaluation, named after the drug (e.g., `drugA.py`, `drugB.py`).  
 - **trained_model/**: Stores pre-trained models, with each model saved in a subdirectory named after the corresponding drug.  
 
 ## Model Training
 To train the model on your dataset, use the provided script:
 ```bash
-cd source
-python xxxx.py
+python dragX.py
 ```
 
 You can adjust hyperparameters such as learning rate, batch size, and the number of epochs in the `train_model.py` script.
