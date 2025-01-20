@@ -58,34 +58,24 @@ git clone https://github.com/Joe-Song-22/panCancerDR.git
 - **source/**: Includes the source code for the model. Each drug has a dedicated Python script for training, testing, and evaluation, named after the drug (e.g., `drugA.py`, `drugB.py`).  
 - **trained_model/**: Stores pre-trained models, with each model saved in a subdirectory named after the corresponding drug.  
 
-## Model Training
-To train the model on your dataset, use the provided script:
-```bash
-python dragX.py
-```
+## Model Training  
+To train the model on your dataset, use the appropriate script based on the data type:  
 
-You can adjust hyperparameters such as learning rate, batch size, and the number of epochs in the `train_model.py` script.
+- For single-cell data:  
+  ```bash  
+  python single_cell_drugX.py  
+  ```  
 
----
+- For patient data (TCGA):  
+  ```bash  
+  python TCGA_drugX.py  
+  ```  
 
+Replace `drugX` with the name of the specific drug you want to train the model on (e.g., `drugA`, `drugB`).
 
-## Hyperparameter Adjustment
-For custom datasets, adjust hyperparameters such as:
-- **Learning rate**
-- **Batch size**
-- **Epoch count**
-
-These can be modified directly within the respective scripts. Comments in the code provide guidance for fine-tuning.
 
 ---
 
-## Customizing Output
-Modify parameters in the scripts to customize output. Refer to the comments in the source code for detailed instructions.
 
----
-## Notes
-Ensure the file paths and script names provided in the commands match your project directory. Replace placeholder paths and file names with the actual ones in your implementation.
-
----
 
 Feel free to let me know if you need additional sections or customizations!
