@@ -40,20 +40,53 @@ Before running the code, ensure you have the following libraries installed:
 Here’s the translated README with the requested information:
 
 
-## **Training Methodology**
+Here’s a README draft modeled after the provided example:
 
-1. **Data Import**  
-   - Each dataset is named according to the corresponding drug.
-   - The model automatically imports the dataset based on the file name.
+---
 
-2. **Model Training**  
-   - The model processes the dataset, trains on it, and evaluates its performance.
-   - AUC values are calculated as the primary performance metric.
+## Installation Guide
 
-3. **Additional Features**  
-   - **Generate ROC Curves**: After training, you can visualize the model's performance using ROC curves.
-   - **Feature Vector Extraction**: The model can return feature vectors from the embedding space for further analysis.
+### Clone the Repository
+```bash
+git clone https://github.com/Joe-Song-22/panCancerDR.git
+```
+
+## Instructions for Use
+
+### Directory Structure
+- **data/**: Contains the datasets for different drugs, each compressed into a separate `.zip` file named after the corresponding drug.  
+- **source/**: Includes the source code for the model. Each drug has a dedicated Python script for training, testing, and evaluation, named after the drug (e.g., `drugA_train.py`, `drugB_test.py`).  
+- **trained_model/**: Stores pre-trained models, with each model saved in a subdirectory named after the corresponding drug.  
+
+## Model Training
+To train the model on your dataset, use the provided script:
+```bash
+cd source
+python xxxx.py
+```
+
+You can adjust hyperparameters such as learning rate, batch size, and the number of epochs in the `train_model.py` script.
+
+---
 
 
-This README provides all necessary information to understand, set up, and run your project. Let me know if you'd like any additional sections or modifications!
-# panCancerDR
+## Hyperparameter Adjustment
+For custom datasets, adjust hyperparameters such as:
+- **Learning rate**
+- **Batch size**
+- **Epoch count**
+
+These can be modified directly within the respective scripts. Comments in the code provide guidance for fine-tuning.
+
+---
+
+## Customizing Output
+Modify parameters in the scripts to customize output. Refer to the comments in the source code for detailed instructions.
+
+---
+## Notes
+Ensure the file paths and script names provided in the commands match your project directory. Replace placeholder paths and file names with the actual ones in your implementation.
+
+---
+
+Feel free to let me know if you need additional sections or customizations!
